@@ -3,6 +3,7 @@ import React, { Component, Fragment } from 'react';
 //Componentes importados
 import Header from './components/Header';
 import ListaNoticias from './components/ListaNoticias';
+import Formulario from './components/Formulario';
 
 class App extends Component {
 
@@ -43,6 +44,7 @@ class App extends Component {
         />
         {/* agregamos clases de bootstrap, materialize y propia */}
         <div className="container white contenedor-noticias ">
+          <Formulario />
           <ListaNoticias
             // pasamos las noticias del padre App.js al hijo ListaNoticias
             noticias={this.state.noticias}
