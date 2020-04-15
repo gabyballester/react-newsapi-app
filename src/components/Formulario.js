@@ -1,6 +1,5 @@
 //Importo React Component y proptypes para el tipado
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 
 class Formulario extends Component { //creamos clase que extiende ce Component
     state = {} //creamos state para controlar estados
@@ -14,6 +13,17 @@ class Formulario extends Component { //creamos clase que extiende ce Component
                     {/* inicio formulario */}
                     <form>
                         <h2>Encuentra Noticias por Categoría</h2>
+                        <div className="input-field col s12 m8 offset-m2">
+                            <select>
+                                <option value="general">General</option>
+                                <option value="business">Negocios</option>
+                                <option value="entertainment">Entretenimiento</option>
+                                <option value="health">Salud</option>
+                                <option value="science">Ciencia</option>
+                                <option value="sports">Deportes</option>
+                                <option value="technology">Tecnología</option>
+                            </select>
+                        </div>
                     </form>
                      {/* fin formulario */}
                 </div>
@@ -22,5 +32,4 @@ class Formulario extends Component { //creamos clase que extiende ce Component
     }
 }
 
- 
 export default Formulario;
