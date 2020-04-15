@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'; //importo librería prop types
 
 const Noticia = ({ noticia }) => {
 
@@ -45,6 +46,11 @@ const Noticia = ({ noticia }) => {
             </div>
         </div>
     );
+}
+
+// Aplicamos la comprobación de tipado
+Noticia.propTypes = {
+    noticia : PropTypes.object.isRequired
 }
 
 export default Noticia;
