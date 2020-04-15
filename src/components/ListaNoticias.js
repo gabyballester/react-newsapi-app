@@ -26,23 +26,3 @@ ListaNoticias.propTypes = {
 }
 
 export default ListaNoticias;
-
-
-// import Noticia from './Noticia';
-// import PropTypes from 'prop-types';
-
-
-//     <div className="row">
-//         {noticias.map(noticia => (
-//             <Noticia 
-//                 key={noticia.url}
-//                 noticia={noticia}
-//             />
-//         ))}
-//     </div>
-// );
-
-// ListaNoticias.propTypes = {
-//     noticias : PropTypes.array.isRequired
-// }
-
