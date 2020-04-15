@@ -5,16 +5,24 @@ const Noticia = ({ noticia }) => {
     //extraemos los datos con destructuring
     const { urlToImage, url, title, description, source } = noticia;
 
+    // condicionalmente cargar la imagen si esta disponible
+    const imagen = //creamos constante
+        //usamos un ternario
+        (urlToImage) ?
+            //si existe imagen muestra esto
+            <div className="card-image">
+                <img src={urlToImage} alt={title} /> {/* agrego la imagen */}
+                {/* agrego la fuente sobre la foto*/}
+                <span className="card-title">{source.name}</span>
+            </div>
+            : null; //si no existe imagen no muestra nada
+
     return (
         // Esto se pintará 1 vez por noticia del array
         // Como tenemos acceso al grid de materialize, lo usamos
         <div className="col s12 m6 l4">
             <div className="card">
-
-                <div className="card-image">
-                    {/* mostramos las imágenes y el alt obligatorio */}
-                    <img src={urlToImage} alt={title} />
-                </div>
+                {imagen}  {/* Mostramos la constante imagen bindeada */}
 
                 <div className="card-content">
                     {/* mostramos título y descripción */}
