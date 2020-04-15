@@ -1,4 +1,7 @@
-import React, { Component } from 'react';
+//Importamos React, Component y Fragment
+import React, { Component, Fragment } from 'react';
+//Componentes importados
+import Header from './components/Header';
 
 class App extends Component {
 
@@ -33,7 +36,15 @@ class App extends Component {
 
   render() {
     return (
-      <h1>Noticias API React</h1>
+      <Fragment>
+        <Header
+        titulo="Noticias React API"
+        />
+        {/* agregamos clases de bootstrap, materialize y propia */}
+       <div className="container white contenedor-noticias ">
+
+            </div>
+      </Fragment>
     );
   }
 }
