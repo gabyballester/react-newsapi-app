@@ -41,7 +41,7 @@ class App extends Component {
     return (
       <Fragment>
         <Header
-          titulo="Noticias React API"
+          titulo='Noticias React usando "newsapi"'
         />
         {/* agregamos clases de bootstrap, materialize y propia */}
         <div className="container white contenedor-noticias ">
